@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>PERSONAL FINANCE TRACKER</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="PFT">
+        </div>
+        <div class="collage-info">
+            <h1>PERSONAL FINANCE TRACKER</h1>
+            <p>Track Your Finances Effortlessly</p>
+            
+        </div>
+    </header>
+
+    <nav>
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+            <li><a href="tracknow.html" target="_new">TRACK NOW</a></li>
+        </ul>
+    </nav>
+    
+    <!-- Form for adding transactions -->
+    <form id="transaction-form">
+        <label for="text">Text</label>
+        <input type="text" id="text" placeholder="Enter text..." required>
+        <label for="amount">Amount</label>
+        <input type="number" id="amount" placeholder="Enter amount..." required>
+        <button type="submit">Add Transaction</button>
+    </form>
+
+    <!-- Display transactions -->
+    <div id="transactions">
+        <h2>Transactions</h2>
+        <ul id="transaction-list"></ul>
+    </div>
+
+    <!-- Display balance -->
+    <div id="balance">
+        <h2>Balance</h2>
+        <h3 id="balance-amount">&#8377 0.00</h3>
+    </div>
+
+    <script src="script.js"></script>
+
+    <footer id="footer">
+        <p style="text-align: center; color: white; font-weight: bold;"> &#169 2023 | Personal Finance Tracker</p>
+    </footer>
+</body>
+</html>
